@@ -1,0 +1,104 @@
+.rating {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	color: #ddd; /* Personal choice */
+    font-size: 8px;
+    margin-left: -15px;
+}
+.rating input {
+	display: none;
+}
+.rating .fas:hover,
+.rating .fas:hover ~ .fas
+ {
+	color: rgb(224, 70, 9); /* Personal color choice. Lifted from Bootstrap 4 */
+    font-size: 25px;
+    cursor: pointer;
+}
+.rating input:checked ~ label i.fas,
+        .rating input:checked ~ label i.fas ~ i.fas {
+            color:rgb(224, 70, 9);
+        }
+.front-stars, .back-stars, .star-rating {
+    display: flex;
+  }
+  
+  .star-rating {
+    align-items: left;
+    font-size: 1.5em;
+    justify-content: left;
+    margin-left: -5px;
+  }
+  
+  .back-stars {
+    color: #CCC;
+    position: relative;
+  }
+ 
+  .front-stars {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s;
+  }
+  .front-stars i.fa{
+    color: rgb(224, 70, 9);
+  }
+  
+  .percent {
+    color: #bb5252;
+    font-size: 1.5em;
+  }
+  .product-rating{
+    text-align: left;
+    display: flex;
+  }
+  .tabs-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #f9f9f9;
+}
+
+.tab .arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tab-pane {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+.star-rating {
+  display: flex;
+  position: relative;
+}
+#review_arrow{
+  align-items: right;
+  position: relative;
+  right: -1170px;
+}
